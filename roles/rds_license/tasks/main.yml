@@ -1,0 +1,10 @@
+---
+  - name: "RDS License Service - Set State to {{ win_feature_rds_license_state }}"
+    win_feature:
+      name: "RDS-Licensing"
+      state: "{{ win_feature_rds_license_state }}"
+
+  - name: RDS License Service UI
+    win_feature:
+      name: "RDS-Licensing-UI"
+      state: "{{ win_feature_rds_license_ui_state }}"

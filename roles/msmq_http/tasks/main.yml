@@ -1,0 +1,10 @@
+---
+  - name: "MSMQ HTTP Feature - Set State to {{ win_feature_msmq_http_state }}"
+    win_optional_feature:
+      include_parent: "{{ win_feature_msmq_http_include_parent }}"
+      name: "msmq-http"
+      state: "{{ win_feature_msmq_http_state }}"
+    notify: Reboot After MSMQ State Change
+
+  - name: Flush Handlers
+    meta: flush_handlers

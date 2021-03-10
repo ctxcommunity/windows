@@ -1,0 +1,3 @@
+---
+  win_feature_netfx3_state: present
+  win_feature_netfx3_include_parent: yes

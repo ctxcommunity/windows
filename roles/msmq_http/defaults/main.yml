@@ -1,0 +1,3 @@
+---
+  win_feature_msmq_http_state: present
+  win_feature_msmq_http_include_parent: yes

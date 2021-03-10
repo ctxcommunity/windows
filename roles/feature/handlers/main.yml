@@ -1,0 +1,5 @@
+---
+  - name: "Reboot After {{ win_feature_name }} State Change"
+    win_reboot:
+      pre_reboot_delay: 10
+    when: win_feature_reboot == 'reboot'

@@ -1,0 +1,6 @@
+---
+  win_feature_name: ~
+  win_feature_state: present
+  win_feature_reboot: noreboot
+  win_feature_include_management_tools: no
+  win_feature_include_sub_features: no

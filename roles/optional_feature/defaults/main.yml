@@ -1,0 +1,5 @@
+---
+  win_optional_feature_name: ~
+  win_optional_feature_state: present
+  win_optional_feature_include_parent: yes
+  win_optional_feature_reboot: noreboot

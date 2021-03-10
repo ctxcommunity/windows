@@ -1,0 +1,13 @@
+---
+  dotnet_48_framework_runtime:
+    4.8.0.20190930:
+      http_location: https://download.visualstudio.microsoft.com/download/pr/014120d7-d689-4305-befd-3cb711108212/0fd66638cde16859462a6243a4629a50/ndp48-x86-x64-allos-enu.exe
+      install_arguments: /q /norestart
+      product_id: 'Update for Microsoft Windows (KB4486153)'
+
+  dotnet_48_framework_runtime_version: 4.8.0.20190930
+
+  dotnet_48_framework_runtime_install_file_location: "{{ dotnet_48_framework_runtime[dotnet_48_framework_runtime_version].http_location }}"
+  dotnet_48_framework_runtime_install_arguments: "{{ dotnet_48_framework_runtime[dotnet_48_framework_runtime_version].install_arguments }}"
+  dotnet_48_framework_runtime_product_id: "{{ dotnet_48_framework_runtime[dotnet_48_framework_runtime_version].product_id }}"
+  dotnet_48_framework_runtime_state: present

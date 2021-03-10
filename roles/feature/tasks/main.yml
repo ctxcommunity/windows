@@ -1,0 +1,11 @@
+---
+  - name: "Feature: {{ win_feature_name }} - Set State to {{ win_feature_state }}"
+    win_feature:
+      name: "{{ win_feature_name }}"
+      state: "{{ win_feature_state }}"
+      include_management_tools: "{{ win_feature_include_management_tools }}"
+      include_sub_features: "{{ win_feature_include_sub_features }}"
+    notify: "Reboot After {{ win_feature_name }} State Change"
+
+  - name: Flush Handlers
+    meta: flush_handlers

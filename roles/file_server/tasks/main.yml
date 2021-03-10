@@ -1,0 +1,9 @@
+---
+  - name: "File Server Role - Set State to {{ win_feature_file_server_state }}"
+    win_feature:
+      name: "FS-FileServer"
+      state: "{{ win_feature_file_server_state }}"
+    notify: Reboot After File Server State Change
+
+  - name: Flush Handlers
+    meta: flush_handlers

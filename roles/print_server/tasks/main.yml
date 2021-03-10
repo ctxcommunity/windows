@@ -1,0 +1,5 @@
+---
+  - name: "Print Server Role - Set State to {{ win_feature_print_server_state }}"
+    win_feature:
+      name: "Print-Server"
+      state: "{{ win_feature_print_server_state }}"

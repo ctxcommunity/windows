@@ -1,0 +1,3 @@
+---
+  win_feature_rds_license_state: present
+  win_feature_rds_license_ui_state: present

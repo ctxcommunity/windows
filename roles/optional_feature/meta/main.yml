@@ -1,0 +1,21 @@
+galaxy_info:
+  role_name: option_feature
+  author: Joe Shonk
+  description: Install/Remove a Windows Optional Feature
+  company: The Shonk Project
+
+  license: GPL-3.0-only
+
+  min_ansible_version: 2.9
+
+  platforms:
+   - name: Windows
+     versions:
+     - All
+
+  galaxy_tags:
+    - windows
+    - feature
+    - optionalfeature
+
+dependencies: []

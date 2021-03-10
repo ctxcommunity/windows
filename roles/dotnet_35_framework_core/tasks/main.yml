@@ -1,0 +1,9 @@
+---
+  - name: ".NET 3.5 Framework Core - Set State to {{ win_feature_dotnet_35_framework_core_state }}"
+    win_feature:
+      name: "NET-Framework-Core"
+      state: "{{ win_feature_dotnet_35_framework_core_state }}"
+    notify: Reboot After NET 35 Framework State Change
+
+  - name: Flush Handlers
+    meta: flush_handlers

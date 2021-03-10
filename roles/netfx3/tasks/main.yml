@@ -1,0 +1,6 @@
+---
+  - name: "Windows Optional Feature Netfx3 - Set State to {{ win_feature_netfx3_state }}"
+    win_optional_feature:
+      include_parent: "{{ win_feature_netfx3_include_parent }}"
+      name: "Netfx3"
+      state: "{{ win_feature_netfx3_state }}"

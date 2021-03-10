@@ -1,0 +1,11 @@
+---
+  - name: "RDS Server Role - Set State to {{ win_feature_rds_server_state }}"
+    win_feature:
+      name: "RDS-RD-SERVER"
+      state: "{{ win_feature_rds_server_state }}"
+    register: rds_server_register
+
+  - name: Reboot After RDS Server State Change
+    win_reboot:
+      pre_reboot_delay: 10
+    when: rds_server_register.reboot_required

@@ -1,0 +1,11 @@
+---
+  - name: ".NET 4.8 Framework Core - Set State to {{ dotnet_48_framework_runtime_state }}"
+    win_package:
+      path: "{{ dotnet_48_framework_runtime_install_file_location }}"
+      product_id: "{{ dotnet_48_framework_runtime_product_id }}"
+      arguments: "{{ dotnet_48_framework_runtime_install_arguments }}"
+      state: "{{ dotnet_48_framework_runtime_state }}"
+    notify: Reboot After NET 48 Framework State Change
+
+  - name: Flush Handlers
+    meta: flush_handlers

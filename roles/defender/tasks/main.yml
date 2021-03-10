@@ -1,0 +1,9 @@
+---
+  - name: "Windows Defender - Set State to {{ win_feature_defender_state }}"
+    win_feature:
+      name: "Windows-Defender"
+      state: "{{ win_feature_defender_state }}"
+    notify: Reboot After Defender State Change
+
+  - name: Flush Handlers
+    meta: flush_handlers

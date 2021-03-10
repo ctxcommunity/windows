@@ -1,0 +1,23 @@
+galaxy_info:
+  role_name: dotnet_48_framework_core
+  author: Joe Shonk
+  description: Install/Remove the Windows Feature .NET 4.8 Framework Core
+  company: The Shonk Project
+
+  license: GPL-3.0-only
+
+  min_ansible_version: 2.9
+
+  platforms:
+   - name: Windows
+     versions:
+     - 2016
+     - 2019
+
+  galaxy_tags:
+    - windows
+    - dotnet
+    - core
+    - framework
+
+dependencies: []

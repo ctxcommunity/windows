@@ -1,0 +1,23 @@
+galaxy_info:
+  role_name: updates
+  author: Joe Shonk
+  description: Performs Windows Update
+  company: The Shonk Project
+
+  license: GPL-3.0-only
+
+  min_ansible_version: 2.9
+
+  platforms:
+   - name: Windows
+     versions:
+     - All
+
+  galaxy_tags:
+    - windows
+    - windowsupdates
+    - updates
+    - rollups
+    - securityupdates
+
+dependencies: []
