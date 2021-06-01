@@ -1,7 +1,7 @@
 galaxy_info:
   role_name: defender
   author: Joe Shonk
-  description: Windows Role Remote Desktop Service
+  description: Windows Role Defender
   company: The Shonk Project
 
   license: GPL-3.0-only
